@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+     *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+     }
+    body{
+       display: block;
+       font-family: 'Lexend Deca', sans-serif;
+      
+     } 
+     .flex-container{
+      
+      display:inline-flex;     
+       justify-content: center;
+       
+      width: 100%;
+       height: 400px;
+       font-size: 20px;
+      margin-top:200px ;
+       height: 600px;
+       
+    
+    }
+    .object-flex-amarrillo {
+      max-width: 300px;
+      max-height: 450px;
+      background-color: hsl(31, 77%, 52%);
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      color: #fff;
+    }
+    .object-flex-amarrillo h1{
+      margin: 30px;
+    }
+    .object-flex-amarrillo img{
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+    .object-flex-amarrillo p{
+     margin: 30px 30px 40px 30px;
+    }
+    .object-flex-amarrillo .botones{
+      color: hsl(31, 77%, 52%);
+    }
+    .botones{
+        margin-left:30px ;
+        width: 170px;
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 5px 10px;
+        text-align: center;
+         margin-bottom: 50px;
+    }
+    /*------------------------------------------------------*/
+    .object-flex-verde-claro{
+      max-width: 300px;
+      max-height: 450px;
+    
+      background-color: hsl(184, 100%, 22%);
+      color:#fff;
+    }
+    .object-flex-verde-claro h1{
+      margin: 30px;
+    }
+    .object-flex-verde-claro img{
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+    .object-flex-verde-claro p{
+     margin: 30px 30px 40px 30px;
+    }
+    .object-flex-verde-claro .botones{
+      color: hsl(184, 100%, 22%);
+    }
+
+      /*------------------------------------------------------*/
+    .object-flex-verde-oscuro{
+      max-width: 300px;
+      max-height: 450px;
+      background-color:hsl(179, 100%, 13%);
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+      color:#fff;
+    }
+    .object-flex-verde-oscuro h1{
+      margin: 30px;
+    }
+    .object-flex-verde-oscuro img{
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+    .object-flex-verde-oscuro p{
+     margin: 30px 30px 40px 30px;
+    }
+    .object-flex-verde-oscuro .botones{
+      color: hsl(184, 100%, 22%);
+    }
+    @media (max-width:800px) {
+      body{
+         
+        
+      }
+      .flex-container{
+        width: 70%;
+        margin-top: 400px;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+      } 
+      .object-flex-amarrillo{
+        max-width: none;
+        min-width: 350px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0 ;
+       }
+       .object-flex-verde-claro{
+        max-width: none;
+        min-width: 350px;
+       }
+       .object-flex-verde-oscuro{
+        max-width: none;
+        min-width: 350px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius:10px ;
+        border-top-right-radius: 0 ;
+       }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+  <div class="object-flex-amarrillo">  
+  <img src="./images/icon-sedans.svg" alt="">
+  <h1>Sedans</h1> 
+  <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+  or on your next road trip.</p>
+  <div class="botones">Learn More</div>
+ </div>
+  <div class="object-flex-verde-claro">
+ <img src="./images/icon-suvs.svg" alt="">
+ <h1>SUVs</h1> 
+  <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+  and off-road adventures.</p> 
+  <div class="botones">Learn More</div>
+</div>
+  <div class="object-flex-verde-oscuro">
+ <img src="./images/icon-luxury.svg" alt="">
+ <h1>Luxury</h1> 
+  <p> Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+  rental and arrive in style.</p>
+  <div class="botones">Learn More</div>
+</div>
+</div>
+ 
+</body>
+</html>
